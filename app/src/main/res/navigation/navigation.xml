@@ -15,17 +15,33 @@
         <action
             android:id="@+id/action_trivia_to_incorrectoFragment"
             app:destination="@id/incorrectoFragment" />
+        <argument
+            android:name="numero_preguntas"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/correctoFragment"
         android:name="com.example.trivia.fragments.CorrectoFragment"
         android:label="fragment_correcto"
-        tools:layout="@layout/fragment_correcto" />
+        tools:layout="@layout/fragment_correcto" >
+        <action
+            android:id="@+id/action_correctoFragment_to_trivia"
+            app:destination="@id/trivia" />
+        <argument
+            android:name="turno_actual"
+            app:argType="integer" />
+    </fragment>
     <fragment
         android:id="@+id/incorrectoFragment"
         android:name="com.example.trivia.fragments.IncorrectoFragment"
         android:label="fragment_incorrecto"
-        tools:layout="@layout/fragment_incorrecto" />
+        tools:layout="@layout/fragment_incorrecto" >
+        <action
+            android:id="@+id/action_incorrectoFragment_to_trivia"
+            app:destination="@id/trivia" />
+        <argument android:name="turno_actual"
+            app:argType="integer" />
+    </fragment>
     <fragment
         android:id="@+id/blankFragment"
         android:name="com.example.trivia.fragments.BlankFragment"

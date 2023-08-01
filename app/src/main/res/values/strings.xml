@@ -2,4 +2,7 @@
     <string name="app_name">Trivia</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="correcto">CORRECTO</string>
+    <string name="incorrecto">INCORRECTO</string>
 </resources>

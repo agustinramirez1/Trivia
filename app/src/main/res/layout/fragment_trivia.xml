@@ -9,23 +9,32 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
+        android:layout_marginHorizontal="20dp"
         android:orientation="vertical">
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/hello_blank_fragment" />
+            android:id="@+id/pregunta"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginBottom="80dp"
+            android:textAlignment="center"
+            android:text="@string/hello_blank_fragment"
+            android:textSize="20sp" />
 
         <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
+            android:id="@+id/respuesta1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#6AB343"
             android:text="Respuesta Correcta" />
         <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
+            android:id="@+id/respuesta2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/red"
+            android:text="Respuesta Incorrecta" />
+        <Button
+            android:id="@+id/respuesta3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Respuesta Incorrecta" />
     </LinearLayout>
 

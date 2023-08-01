@@ -12,11 +12,6 @@ import com.example.trivia.R
 
 class BlankFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
-    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -25,9 +20,9 @@ class BlankFragment : Fragment() {
         var binding = inflater.inflate(R.layout.fragment_blank, container, false)
 
         // // listener del boton
-        val botonPlay: Button = binding.findViewById(R.id.playButton)
+        val botonPlay: Button = binding.findViewById(R.id.buttonPlay)
         botonPlay.setOnClickListener{ view ->
-            Navigation.findNavController(view).navigate(R.id.action_blankFragment_to_trivia(3))
+            Navigation.findNavController(view).navigate(BlankFragmentDirections.actionBlankFragmentToTrivia(0))
         }
 
         return binding
